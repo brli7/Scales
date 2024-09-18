@@ -1,6 +1,7 @@
+PImage img = loadImage("https://i.imgur.com/vmCKTVc.png", "png");
+
 void setup() {
   size(1000, 500); 
-  noLoop(); 
 }
 
 boolean dragged = false;
@@ -16,6 +17,11 @@ void draw() {
   }
   
   dragged = false;
+  
+  image(img,225,75);
+  
+  
+  
   loop();
 }
 void scale(int x, int y) {    
@@ -40,6 +46,8 @@ void mouseDragged() {
     g = 255;
     b = 255;
 }
+
+
 
 
 
